@@ -67,6 +67,24 @@
         a:hover {
             text-decoration: underline;
         }
+        .screenshots {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            margin: 32px 0;
+            flex-wrap: wrap;
+        }
+        .screenshots img {
+            width: 280px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+        @media (max-width: 640px) {
+            .screenshots img {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
         .footer {
             margin-top: 48px;
             padding-top: 24px;
@@ -87,6 +105,11 @@
         <h1>Event Silencer</h1>
 
         <p>Event Silencer is an Android app that automatically silences your phone during Google Calendar events or when you arrive at specific locations. Stop worrying about forgetting to mute your phone before meetings, appointments, or important events — Event Silencer handles it for you.</p>
+
+        <div class="screenshots">
+            <img src="screenshot-events.png" alt="Event Silencer - Events screen">
+            <img src="screenshot-location.png" alt="Event Silencer - Location screen">
+        </div>
 
         <h2>How it works</h2>
 
